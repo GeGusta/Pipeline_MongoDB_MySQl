@@ -9,10 +9,10 @@ Nossa missão é construir uma pipeline de dados que garanta o fluxo contínuo e
 ## Método
 A construção da pipeline foi feita em python e a seguir tem-se o diagrama dela e tarefas feitas em sequência:
 ![Pipeline](/modelo_pipeline_mongodb_mysql.png)
-- A extração das informações será feita de uma API;
-- O dados serão salvos no MongoDB, após extração. Utilizado MongoDB Atlas para fazer a tarefa. Criado banco "dbprodutos" e coleção "produtos" para armazenar as informações;
-- Depois será feito tratamento dessas informações e salvo em .csv. Será separada a categoria "Livros" e as compras a partir de 2021, ajustado o formato de data e salvo em arquivos diferentes;
-- A partir desses arquivos .csv as informações serão salvas no MySQL em duas tabelas diferentes "tb_livros" e "tb_compras_mais_2021" no banco "dbprodutos".
+- A extração das informações foi feita de uma API;
+- O dados foram salvos no MongoDB, após extração. Utilizado MongoDB Atlas para fazer a tarefa. Criado banco "dbprodutos" e coleção "produtos" para armazenar as informações;
+- Depois foi feito tratamento dessas informações e salvo em .csv. Foi separado a categoria "Livros" e as compras a partir de 2021, ajustado o formato de data e salvas em arquivos diferentes;
+- A partir desses arquivos .csv as informações foram salvas no MySQL em duas tabelas diferentes "tb_livros" e "tb_compras_mais_2021" no banco "dbprodutos".
 Para proteção das chave de acesso foi utilizado o método de variáveis de ambiente com arquivos .env e utilização da biblioteca dotenv.
 
 ## Resultado
